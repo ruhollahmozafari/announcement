@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "5f7cf8a2-45b1-446d-8b66-4198fdaf40c0",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/api/announcements/",
+    "url": "http://192.168.88.220:8030/api/announcements/search/?query=str",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-15T11:30:46.308Z",
+    "modified": "2023-06-17T04:39:24.466Z",
+    "headers": [
+      {
+        "name": "accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2OTEyNDU2LCJpYXQiOjE2ODY4MjYwNTYsImp0aSI6ImU2ZTI0NjFkZjU0ZTQ3MTY4ODllMjQyMTQ3ZTdiYjFhIiwidXNlcl9pZCI6NSwiZW1haWwiOiJzdHJpbmdfdXNlckBleGFtcGxlLmNvbSIsIm1vYmlsZSI6bnVsbCwibmFtZSI6InN0cmluZyJ9.cISid0YXKvbKFJbaT2kocWkokxnZbd1i4qVhQrmBnes"
+      }
+    ],
+    "params": [
+      {
+        "name": "query",
+        "value": "str",
+        "isPath": false
+      }
+    ],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDYyOTkzLCJqdGkiOiIzNjY5ODA3NTZiMmU0N2I5OTI5MmFjNjFlODczMjFjNyIsInVzZXJfaWQiOjIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsIm1vYmlsZSI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmcifQ.XaoUa5q5Z7WEYk5xUeG1Jx9_Xq4yxhU-lbx8LryOGGA"
+    },
+    "tests": []
+  }
+]

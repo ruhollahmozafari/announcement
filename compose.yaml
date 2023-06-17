@@ -1,0 +1,46 @@
+version: "3.1"
+
+services:
+
+  db:
+    image: postgis/postgis
+    container_name: postgres-refactor #you can change this
+    restart: unless-stopped
+    networks:
+    environment:
+      - POSTGRES_NAME=demo
+      - POSTGRES_USER=demo
+      - POSTGRES_PASSWORD=demo
+      - POSTGRES_DB=demo
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+  api:
+    ports:
+      - 8003:8003
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        STATIC_URL: "/static/"
+    restart: unless-stopped
+    networks:
+    stdin_open: true
+    tty: true
+
+    volumes:
+      - .:/api
+    command: python manage.py runserver 0.0.0.0:8003
+
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+    driver: bridge
+
+
